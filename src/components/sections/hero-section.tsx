@@ -14,7 +14,7 @@ export function HeroSection() {
         {personalInfo.role}
       </h1>
       <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mb-8'>
-        {personalInfo.bio[0]}
+        I build responsive, accessible web applications with modern technologies
       </p>
       <div className='flex gap-4'>
         <Button size='lg'>
