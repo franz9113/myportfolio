@@ -3,15 +3,16 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Download } from 'lucide-react';
 import { navLinks } from '@/data/portfolio-data';
 
 export function Header() {
-  // Handle smooth scrolling for navigation links
+  // smooth scrolling for nav links
   useEffect(() => {
     const handleNavClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
 
-      // Check if the clicked element is a navigation link
+      // Check if the clicked element is a nav link
       if (
         target.tagName === 'A' &&
         target.getAttribute('href')?.startsWith('#')
@@ -55,8 +56,16 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Button variant='outline' size='sm' className='hidden md:flex'>
-          Resume
+        <Button
+          variant='outline'
+          size='sm'
+          className='hidden md:flex items-center gap-2'
+          asChild
+        >
+          <a href='/Franz_Resume.pdf' download='Franz_Josef_Siblos_Resume.pdf'>
+            <Download className='h-4 w-4' />
+            Resume
+          </a>
         </Button>
       </div>
     </header>
