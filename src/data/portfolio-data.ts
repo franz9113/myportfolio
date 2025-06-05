@@ -51,8 +51,8 @@ export const skills = [
   {
     category: 'Programming Languages',
     items: [
-      { name: 'Java', percentage: 75 },
-      { name: 'VB.NET', percentage: 70 },
+      { name: 'Java', percentage: 80 },
+      { name: 'VB.NET', percentage: 90 },
       { name: 'JavaScript', percentage: 85 },
     ],
   },
@@ -137,24 +137,21 @@ export const galleryItems = [
   },
   {
     id: 5,
-    title: 'Dune Report Mobile App',
+    title: 'Foruta Mobile Application',
     category: 'Mobile Application',
-    image:
-      'https://fastly.picsum.photos/id/50/800/600.jpg?hmac=ixTT6Mrdeyg7-IvwGA4wfObB1pv4Gng2Da7Ih6-MkD4',
+    image: '/images/mobile_application/foruta.png',
   },
   {
     id: 6,
-    title: 'Foruta Logo Design',
+    title: 'Manta Mountain Resort',
     category: 'Web Development',
-    image:
-      'https://fastly.picsum.photos/id/60/800/600.jpg?hmac=Bd6ksYEo3GQ_lyS6j9piXLIXQIvA8YC1bxH0HsZ2Brw',
+    image: '/images/web_development/manta.png',
   },
   {
     id: 7,
-    title: 'Task Management System',
+    title: 'Foruta ( Food Delivery)',
     category: 'Software Development',
-    image:
-      'https://fastly.picsum.photos/id/70/800/600.jpg?hmac=r-c1PqjVWiOMgMW35Cp_16PWvAX2rNr9fFIp41lOFP0',
+    image: '/images/software_development/foruta.jpg',
   },
   {
     id: 8,
@@ -165,9 +162,8 @@ export const galleryItems = [
   },
   {
     id: 9,
-    title: 'Inventory Management App',
+    title: 'Gold n Bean (Coffee Shop)',
     category: 'Software Development',
-    image:
-      'https://fastly.picsum.photos/id/90/800/600.jpg?hmac=llV4XRf1HN_BQCsX1LnL_uywecbib5CBSrWfh_NdYG8',
+    image: '/images/software_development/goldnbean.jpg',
   },
 ];

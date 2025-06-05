@@ -7,7 +7,7 @@ import { Download } from 'lucide-react';
 import { navLinks } from '@/data/portfolio-data';
 
 export function Header() {
-  // smooth scrolling for nav links
+  // smooth scroll
   useEffect(() => {
     const handleNavClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;

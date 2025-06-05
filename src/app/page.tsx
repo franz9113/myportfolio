@@ -12,7 +12,7 @@ export default function Portfolio() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       <GallerySection />
       <ContactSection />
     </PageLayout>
