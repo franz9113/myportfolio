@@ -29,23 +29,23 @@ export const skills = [
   {
     category: 'Frontend',
     items: [
-      { name: 'HTML', percentage: 90 },
-      { name: 'CSS', percentage: 85 },
+      { name: 'HTML', percentage: 95 },
+      { name: 'CSS', percentage: 90 },
       { name: 'React', percentage: 80 },
-      { name: 'Next.js', percentage: 75 },
+      { name: 'Next.js', percentage: 83 },
       { name: 'Tailwind CSS', percentage: 85 },
-      { name: 'DaisyUI', percentage: 80 },
-      { name: 'ShadcnUI', percentage: 75 },
+      { name: 'DaisyUI', percentage: 85 },
+      { name: 'ShadcnUI', percentage: 90 },
     ],
   },
   {
     category: 'Backend',
     items: [
-      { name: 'PHP', percentage: 70 },
-      { name: 'Node.js', percentage: 75 },
+      { name: 'PHP', percentage: 90 },
+      { name: 'Node.js', percentage: 70 },
       { name: 'Express', percentage: 70 },
       { name: 'REST APIs', percentage: 80 },
-      { name: 'JavaScript', percentage: 85 },
+      { name: 'JavaScript', percentage: 87 },
     ],
   },
   {
@@ -128,40 +128,40 @@ export const galleryItems = [
     category: 'Certificates',
     image: '/images/certificates/security_certificate.jpg',
   },
+  // {
+  //   id: 4,
+  //   title: 'Publication Certificate',
+  //   category: 'Certificates',
+  //   image:
+  //     'https://fastly.picsum.photos/id/40/800/600.jpg?hmac=szpHgMA06nyI-2o6V_Ww9_Mbws0K4bwxsODpdI1Hmis',
+  // },
   {
     id: 4,
-    title: 'Publication Certificate',
-    category: 'Certificates',
-    image:
-      'https://fastly.picsum.photos/id/40/800/600.jpg?hmac=szpHgMA06nyI-2o6V_Ww9_Mbws0K4bwxsODpdI1Hmis',
-  },
-  {
-    id: 5,
     title: 'Foruta Mobile Application',
     category: 'Mobile Application',
     image: '/images/mobile_application/foruta.png',
   },
   {
-    id: 6,
+    id: 5,
     title: 'Manta Mountain Resort',
     category: 'Web Development',
     image: '/images/web_development/manta.png',
   },
   {
-    id: 7,
+    id: 6,
     title: 'Foruta ( Food Delivery)',
     category: 'Software Development',
     image: '/images/software_development/foruta.jpg',
   },
+  // {
+  //   id: 8,
+  //   title: 'E-commerce Platform',
+  //   category: 'Web Development',
+  //   image:
+  //     'https://fastly.picsum.photos/id/80/800/600.jpg?hmac=eO9WeSNcizo6EA2x4g5BbL0di6Y5-6gr7dYRR4gygUY',
+  // },
   {
-    id: 8,
-    title: 'E-commerce Platform',
-    category: 'Web Development',
-    image:
-      'https://fastly.picsum.photos/id/80/800/600.jpg?hmac=eO9WeSNcizo6EA2x4g5BbL0di6Y5-6gr7dYRR4gygUY',
-  },
-  {
-    id: 9,
+    id: 7,
     title: 'Gold n Bean (Coffee Shop)',
     category: 'Software Development',
     image: '/images/software_development/goldnbean.jpg',
