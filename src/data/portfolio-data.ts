@@ -19,7 +19,7 @@ export const personalInfo = {
 export const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
+  // { name: 'Projects', href: '#projects' },
   { name: 'Gallery', href: '#gallery' },
   { name: 'Contact', href: '#contact' },
 ];

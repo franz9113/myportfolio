@@ -11,7 +11,6 @@ export default function Portfolio() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      {/* <ProjectsSection /> */}
       <GallerySection />
       <ContactSection />
     </PageLayout>
