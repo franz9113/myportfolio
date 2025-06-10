@@ -5,14 +5,33 @@ import Image from 'next/image';
 import { galleryItems, projectDetails } from '@/data/portfolio-data';
 import { ImageModal } from '@/components/ui/image-modal';
 
+interface GalleryItem {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+}
+
+interface SelectedImage {
+  url: string;
+  title: string;
+  category: string;
+  projectDetails?: {
+    role?: string;
+    tools?: string[];
+    year?: string;
+    overview?: string;
+    contribution?: string;
+    challenges?: string;
+    links?: Array<{ label: string; url: string }>;
+  };
+}
+
 export function GallerySection() {
   const [activeCategory, setActiveCategory] = useState<string>('All');
-  const [selectedImage, setSelectedImage] = useState<{
-    url: string;
-    title: string;
-    category: string;
-    projectDetails?: any;
-  } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<SelectedImage | null>(
+    null
+  );
 
   // Get unique categories
   const categories = [
@@ -27,7 +46,7 @@ export function GallerySection() {
       : galleryItems.filter((item) => item.category === activeCategory);
 
   // Handle image click with project details
-  const handleImageClick = (item: any) => {
+  const handleImageClick = (item: GalleryItem) => {
     setSelectedImage({
       url: item.image,
       title: item.title,
