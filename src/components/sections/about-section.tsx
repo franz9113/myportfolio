@@ -31,13 +31,18 @@ export function AboutSection() {
               </p>
             ))}
             <div className='flex gap-4'>
-              <Button variant='outline' size='icon' asChild>
+              {/* <Button variant='outline' size='icon' asChild>
                 <a
                   href={personalInfo.github}
                   target='_blank'
                   rel='noopener noreferrer'
                 >
                   <Github className='h-5 w-5' />
+                </a>
+              </Button> */}
+              <Button variant='outline' size='icon' asChild>
+                <a href={`mailto:${personalInfo.email}`}>
+                  <Mail className='h-5 w-5' />
                 </a>
               </Button>
               <Button variant='outline' size='icon' asChild>
@@ -47,11 +52,6 @@ export function AboutSection() {
                   rel='noopener noreferrer'
                 >
                   <Linkedin className='h-5 w-5' />
-                </a>
-              </Button>
-              <Button variant='outline' size='icon' asChild>
-                <a href={`mailto:${personalInfo.email}`}>
-                  <Mail className='h-5 w-5' />
                 </a>
               </Button>
             </div>

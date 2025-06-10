@@ -14,7 +14,9 @@ export function HeroSection() {
         {personalInfo.role}
       </h1>
       <p className='text-lg md:text-xl text-muted-foreground max-w-2xl mb-8'>
-        I build responsive, accessible web applications with modern technologies
+        {/* I build responsive, accessible web applications with modern technologies */}
+        I design clean, user-friendly interfaces and experiences—built with
+        empathy and backed by a foundation in web development.
       </p>
       <div className='flex gap-4'>
         <Button size='lg'>

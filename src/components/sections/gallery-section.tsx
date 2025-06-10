@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { galleryItems } from '@/data/portfolio-data';
+import { galleryItems, projectDetails } from '@/data/portfolio-data';
 import { ImageModal } from '@/components/ui/image-modal';
 
 export function GallerySection() {
@@ -10,6 +10,8 @@ export function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<{
     url: string;
     title: string;
+    category: string;
+    projectDetails?: any;
   } | null>(null);
 
   // Get unique categories
@@ -23,6 +25,16 @@ export function GallerySection() {
     activeCategory === 'All'
       ? galleryItems
       : galleryItems.filter((item) => item.category === activeCategory);
+
+  // Handle image click with project details
+  const handleImageClick = (item: any) => {
+    setSelectedImage({
+      url: item.image,
+      title: item.title,
+      category: item.category,
+      projectDetails: projectDetails[item.title as keyof typeof projectDetails],
+    });
+  };
 
   return (
     <section id='gallery' className='py-20 bg-[#17171a]'>
@@ -57,9 +69,7 @@ export function GallerySection() {
             <div
               key={item.id}
               className='relative group overflow-hidden rounded-lg bg-[#121210] border border-white/10 cursor-pointer'
-              onClick={() =>
-                setSelectedImage({ url: item.image, title: item.title })
-              }
+              onClick={() => handleImageClick(item)}
             >
               <div className='aspect-video relative overflow-hidden'>
                 <Image
@@ -82,12 +92,14 @@ export function GallerySection() {
         </div>
       </div>
 
-      {/* Image Modal */}
+      {/* Image Modal with Project Details */}
       <ImageModal
         isOpen={!!selectedImage}
         onClose={() => setSelectedImage(null)}
         imageUrl={selectedImage?.url || ''}
         title={selectedImage?.title || ''}
+        category={selectedImage?.category || ''}
+        projectDetails={selectedImage?.projectDetails}
       />
     </section>
   );

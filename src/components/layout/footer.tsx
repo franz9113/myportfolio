@@ -10,14 +10,14 @@ export function Footer() {
           reserved.
         </p>
         <div className='flex justify-center gap-4 mt-4'>
-          <Button variant='ghost' size='icon'>
+          {/* <Button variant='ghost' size='icon'>
             <Github className='h-5 w-5' />
+          </Button> */}
+          <Button variant='ghost' size='icon'>
+            <Mail className='h-5 w-5' />
           </Button>
           <Button variant='ghost' size='icon'>
             <Linkedin className='h-5 w-5' />
-          </Button>
-          <Button variant='ghost' size='icon'>
-            <Mail className='h-5 w-5' />
           </Button>
         </div>
       </div>

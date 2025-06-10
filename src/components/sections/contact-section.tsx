@@ -27,7 +27,7 @@ export function ContactSection() {
             </a>
           </Button>
 
-          <Button
+          {/* <Button
             variant='outline'
             size='icon'
             className='rounded-full h-12 w-12'
@@ -41,7 +41,7 @@ export function ContactSection() {
             >
               <Github className='h-5 w-5' />
             </a>
-          </Button>
+          </Button> */}
 
           <Button
             variant='outline'
